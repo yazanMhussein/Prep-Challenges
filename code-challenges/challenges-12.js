@@ -23,6 +23,7 @@ const oddFiltration = (arr) => {
 }) 
  return ar
 }
+    // write your code here
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -90,9 +91,11 @@ const cvsFiltration = (arr) =>{
 // Input: ['car', 'boy', 'spy', 'building', 'why', 'dry' ]
 // Output: ['spy', 'why', 'dry']
 // 
-
+let vowels = ["a", "e", "i", "o", "u"]
 const vowelsFiltration = (arr) => {
-    // write your code here
+    return arr.filter(word => {
+        return !vowels.some(vowel => word.includes(vowel));
+    });
 }
 // -------------------------------------------------------------------------------------------------------
 
