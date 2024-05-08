@@ -24,7 +24,8 @@
 //
 
 const LastWord = (str) => {
-    // write your code here
+    const lastSpaceIndex = sentence.lastIndexOf(' ');
+    return sentence.slice(lastSpaceIndex + 1);
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -38,7 +39,8 @@ const LastWord = (str) => {
 //  Output: "potter"
 
 const LastWord_2 = (str) => {
-    // write your code here
+    const words = str.trim().split(' ');
+    return words[words.length - 1];
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -61,7 +63,17 @@ const LastWord_2 = (str) => {
 //
 
 const replaceWords = (str) => {
-    // write your code here
+    const words = str.split(' ');
+    for (let i = 0; i < words.length; i++) {
+        if (words[i] === "I") {
+            words.splice(i, 1, "We");
+        } else if (words[i] === "am") {
+            words.splice(i, 1, "are");
+        } else if (words[i] === "was") {
+            words.splice(i, 1, "were");
+        }
+    }
+    return words.join(' ');
 }
 // -------------------------------------------------------------------------------------------------------
 
