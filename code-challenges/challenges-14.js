@@ -19,14 +19,13 @@
 // Input: "I did my waiting 12 years of it in Azkaban"
 // Output: "Azkaban"
 //
-// Input:  "Impossible"
+// Input: "Impossible"
 // Output: "Impossible"
 //
 
 const LastWord = (str) => {
-    const lastSpaceIndex = str.lastIndexOf(' ');
-    return str.slice(lastSpaceIndex + 1);
-    
+    const lastSpaceIndex = sentence.lastIndexOf(' ');
+    return sentence.slice(lastSpaceIndex + 1);
 }
 // -------------------------------------------------------------------------------------------------------
 
