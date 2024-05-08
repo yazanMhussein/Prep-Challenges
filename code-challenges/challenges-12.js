@@ -18,8 +18,12 @@
 // 
 
 const oddFiltration = (arr) => {
-    // write your code here
+    let ar = arr.filter(odd =>{
+    return odd  %2 !==0;
+}) 
+ return ar
 }
+    // write your code here
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -69,8 +73,12 @@ const oddFiltration = (arr) => {
 //  1- Full name is first name + last name
 //  2- If one of the names is null dont add it to the full name
 
-const cvsFiltration = (arr) => {
-    // write your code here
+const cvsFiltration = (arr) =>{
+    return arr.filter(job => job.yearsOfExperience > 4 && job.tech === 'JS')
+    .map(job => {
+        const fullName = `${job.firstName}${job.LastName ? ' ' + job.LastName : ''}`;
+        return { fullName, tech: job.tech };
+    });
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -83,9 +91,11 @@ const cvsFiltration = (arr) => {
 // Input: ['car', 'boy', 'spy', 'building', 'why', 'dry' ]
 // Output: ['spy', 'why', 'dry']
 // 
-
+let vowels = ["a", "e", "i", "o", "u"]
 const vowelsFiltration = (arr) => {
-    // write your code here
+    return arr.filter(word => {
+        return !vowels.some(vowel => word.includes(vowel));
+    });
 }
 // -------------------------------------------------------------------------------------------------------
 
