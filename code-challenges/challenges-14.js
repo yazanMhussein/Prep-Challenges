@@ -19,14 +19,12 @@
 // Input: "I did my waiting 12 years of it in Azkaban"
 // Output: "Azkaban"
 //
-// Input:  "Impossible"
+// Input: "Impossible"
 // Output: "Impossible"
 //
 
 const LastWord = (str) => {
-    const lastSpaceIndex = str.lastIndexOf(' ');
-    return str.slice(lastSpaceIndex + 1);
-    
+    // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -40,8 +38,7 @@ const LastWord = (str) => {
 //  Output: "potter"
 
 const LastWord_2 = (str) => {
-    const words = str.trim().split(' ');
-    return words[words.length - 1];
+    // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -64,17 +61,7 @@ const LastWord_2 = (str) => {
 //
 
 const replaceWords = (str) => {
-    const words = str.split(' ');
-    for (let i = 0; i < words.length; i++) {
-        if (words[i] === "I") {
-            words.splice(i, 1, "We");
-        } else if (words[i] === "am") {
-            words.splice(i, 1, "are");
-        } else if (words[i] === "was") {
-            words.splice(i, 1, "were");
-        }
-    }
-    return words.join(' ');
+    // write your code here
 }
 // -------------------------------------------------------------------------------------------------------
 
