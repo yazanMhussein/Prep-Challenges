@@ -24,8 +24,8 @@
 //
 
 const LastWord = (str) => {
-    const lastSpaceIndex = sentence.lastIndexOf(' ');
-    return sentence.slice(lastSpaceIndex + 1);
+    const lastSpaceIndex = str.lastIndexOf(' ');
+    return str.slice(lastSpaceIndex + 1);
 }
 // -------------------------------------------------------------------------------------------------------
 
